@@ -16,7 +16,7 @@ machine:
   name: Ratiocinating-Machine
   verb: Ratiocinating
   instructions_file: ratiocinating.md
-  token: gemini
+  token: gemini_paid
   server: https://localhost:443
   apiUrl: https://generativelanguage.googleapis.com/v1beta/models/
   fallback_llm: gemini-2.5-pro
@@ -25,10 +25,10 @@ app:
   worker_name: gemapi.js
 
 lm:
-  model: gemini-3-flash-preview
+  model: gemini-3-pro-preview
   maxOutputTokens: 65536
   temperature: 1.0
-  topP: 0.9
+  topP: 1.0
   topK: 50
   thinkingBudget: 32768
   includeThoughts: true
