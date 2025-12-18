@@ -10,7 +10,7 @@ url: https://ratiocinating-machine.github.io
 baseurl: /gemini
 
 title: Ratiocinating Machine
-description: This is a machine that reasons.
+description: This is a machine that ratiocinates.
 
 machine:
   name: Ratiocinating-Machine
@@ -28,9 +28,9 @@ lm:
   model: gemini-3-pro-preview
   maxOutputTokens: 65536
   temperature: 1.0
-  topP: 1.0
+  topP: 0.9
   topK: 50
-  thinkingBudget: 32768
+  thinkingLevel: high
   includeThoughts: true
 
 
